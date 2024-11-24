@@ -275,7 +275,7 @@ func init() {
 		for i, s := range config.S {
 			config.Z.Driver[i+len(config.W)] = s
 		}
-		logrus.Infoln("[main] 从", *runcfg, "读取配置文件")
+		logrus.Infoln("[main]从", *runcfg, "读取配置文件")
 		return
 	}
 	config.W = []*driver.WSClient{driver.NewWebSocketClient(*url, *token)}
